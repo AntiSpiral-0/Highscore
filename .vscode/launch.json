@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": ".NET Core Launch (console)",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "build",
+        "program": "C:/Users/Lenovo/Highscore/bin/Debug/net7.0/Highscore.dll",
+        "args": [],
+        "cwd": "C:/Users/Lenovo/Highscore",
+        "stopAtEntry": false,
+        "externalConsole":true ,
+        "serverReadyAction": {
+          "action": "openExternally",
+          "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+        },
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+        "sourceFileMap": {
+          "/Views": "C:/Users/Lenovo/Highscore//Views"
+        },
+        "pipeTransport": {
+          "pipeProgram": "dotnet",
+          "pipeArgs": ["exec", "--runtimeconfig", "C:/Users/Lenovo/Highscore/bin/Debug/netcoreapp3.1/YourApp.runtimeconfig.json", "--depsfile", "${workspaceFolder}/bin/Debug/netcoreapp3.1/YourApp.deps.json"],
+          "debuggerPath": "C:/Users/Lenovo/.dotnet/sdk-advertising/7.0.400"
+        },
+        "logging": {
+          "moduleLoad": false,
+          "exception": false
+        },
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "openOnSessionStart"
+      }
+    ]
+  }
+  
